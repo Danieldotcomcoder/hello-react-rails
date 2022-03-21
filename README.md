@@ -6,7 +6,8 @@ In this project I will connect previous knowledge with new knowledge as I use th
 
 - Ruby
 - Ruby on Rails
-
+- Javascript
+- React
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
