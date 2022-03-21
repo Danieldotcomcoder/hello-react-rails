@@ -29,12 +29,8 @@ class HelloWorld extends React.Component {
     const { greetings } = this.props;
     const thingsList = [greetings].map((greeting) => {
       return (
-        <List.Item className="list">
-          <List.Icon
-            name="arrow circle right"
-            size="large"
-            verticalAlign="middle"
-          />
+        <List.Item >
+          <List.Icon />
           <List.Content>
           <p>Greeting</p>
             <List.Header as="a">{greeting.name}</List.Header>
@@ -45,15 +41,14 @@ class HelloWorld extends React.Component {
     });
     return (
       <React.Fragment>
-        <div className="grettingDiv">
+        <div>
           <button
-            className="getThingsBtn"
             onClick={() => this.props.getThings()}
           >
-            Click to change greeting
+            Click To Change Greeting
           </button>
           <br />
-          <ul className="thingsClass">{thingsList}</ul>
+          <ul>{thingsList}</ul>
         </div>
       </React.Fragment>
     );
